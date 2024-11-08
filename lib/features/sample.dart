@@ -149,7 +149,7 @@ class _SamplePageState extends State<SamplePage> {
               const SizedBox(height: 20),
               AppRadioButton<String>(
                 label: "Choose an option (Horizontal)",
-                options: [
+                options: const [
                   "Option D",
                   "Option E",
                   "Option F",
@@ -168,7 +168,7 @@ class _SamplePageState extends State<SamplePage> {
               const SizedBox(height: 20),
               AppRadioButton<String>(
                 label: "Choose an option (Vertical)",
-                options: ["Option A", "Option B", "Option C"],
+                options: const ["Option A", "Option B", "Option C"],
                 selectedValue: _selectedRadio,
                 onChanged: (value) {
                   setState(() {
@@ -182,7 +182,7 @@ class _SamplePageState extends State<SamplePage> {
               // Vertical AppCheckList
               AppCheckList<String>(
                 label: "Select your hobbies (Vertical)",
-                options: ["Reading", "Traveling", "Cooking", "Gaming"],
+                options: const ["Reading", "Traveling", "Cooking", "Gaming"],
                 selectedValues: _selectedValuesVertical,
                 onChanged: (List<String> selected) {
                   setState(() {
@@ -198,7 +198,7 @@ class _SamplePageState extends State<SamplePage> {
               // Horizontal AppCheckList
               AppCheckList<String>(
                 label: "Select your hobbies (Horizontal)",
-                options: ["Reading", "Traveling", "Cooking", "Gaming"],
+                options: const ["Reading", "Traveling", "Cooking", "Gaming"],
                 selectedValues: _selectedValuesHorizontal,
                 onChanged: (List<String> selected) {
                   setState(() {

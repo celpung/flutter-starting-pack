@@ -41,6 +41,20 @@ class AppTextStyles {
     );
   }
 
+  static TextStyle smallText(BuildContext context) {
+    return GoogleFonts.montserrat(
+      fontSize: _scaleFontSize(context, 14.0),
+      color: AppColors.text,
+    );
+  }
+
+  static TextStyle xSmallText(BuildContext context) {
+    return GoogleFonts.montserrat(
+      fontSize: _scaleFontSize(context, 12.0),
+      color: AppColors.text,
+    );
+  }
+
   static TextStyle buttonText(BuildContext context) {
     return GoogleFonts.montserrat(
       fontSize: _scaleFontSize(context, 18.0),
